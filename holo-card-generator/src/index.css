@@ -1,0 +1,60 @@
+@import url('https://miaoda.feishu.cn/fonts/css2?family=Orbitron:wght@500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./tailwind-theme.css";
+@import "./typography.css";
+
+:root {
+  color-scheme: dark;
+  font-family: Orbitron, "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #05070d;
+}
+
+.holo-button {
+  border: 1px solid rgba(66, 243, 255, 0.28);
+  border-radius: 0.85rem;
+  background: rgba(3, 12, 25, 0.78);
+  color: rgba(224, 252, 255, 0.92);
+  padding: 0.62rem 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.holo-button:hover {
+  border-color: rgba(66, 243, 255, 0.78);
+  box-shadow: 0 0 18px rgba(66, 243, 255, 0.18);
+  background: rgba(8, 28, 45, 0.9);
+}
+
+.holo-button-active {
+  border-color: rgba(255, 59, 184, 0.88);
+  box-shadow: 0 0 20px rgba(255, 59, 184, 0.22);
+  color: #ffd7f0;
+}
+
+.holo-range {
+  accent-color: #42f3ff;
+  height: 1.25rem;
+}
+
+.holo-range::-webkit-slider-runnable-track {
+  height: 0.28rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(66, 243, 255, 0.7), rgba(255, 59, 184, 0.62));
+}
+
+.holo-range::-moz-range-track {
+  height: 0.28rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(66, 243, 255, 0.7), rgba(255, 59, 184, 0.62));
+}
+
+::selection {
+  background: rgba(66, 243, 255, 0.32);
+}
