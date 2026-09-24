@@ -1,0 +1,7 @@
+*.zip
+*.mp4
+*.rar
+Thumbs.db
+.DS_Store
+tmp/
+*.log
